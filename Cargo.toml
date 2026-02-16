@@ -1,0 +1,14 @@
+[package]
+name = "blogwing"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+handlebars = { version = "6.4.0", features = ["dir_source"] }
+markdown-frontmatter = { version = "0.4.0", features = ["yaml"] }
+pulldown-cmark = { version = "0.13.0",  features = ["html"] }
+serde = { version = "1.0.228", default-features = false, features = ["std", "derive"] }
+serde_json = { version = "1.0.149", default-features = false, features = ["std"] }
+serde_yaml = "0.9.34"
+walkdir = "2.5.0"
